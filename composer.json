@@ -1,0 +1,8 @@
+{
+    "name": "doliairyna/blog_mvc",
+    "type": "project",
+    "require": {
+        "erusev/parsedown": "^1.8",
+        "nesbot/carbon": "^3.15"
+    }
+}

@@ -4,9 +4,9 @@ require_once __DIR__ . '/../models/Post.php';
 
 class BlogController
 {
-    public function showAllPosts(): void
+    public function showAllPosts(string $search = ''): void
     {
-        $posts = Post::getAll();
+        $posts = Post::search($search);
         require __DIR__ . '/../views/postsView.php';
     }
 }
